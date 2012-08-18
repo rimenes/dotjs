@@ -43,3 +43,9 @@ function checkForOpenGraphOAuth() {
 checkForOpenGraphOAuth();
 replaceOpenGraphTags();
 document.addEventListener('DOMSubtreeModified', replaceOpenGraphTags, false);
+
+// remove 'friends on chat' box
+$('#pagelet_friends_online').hide();
+
+// remove chat dock
+$('.fbDockWrapper').hide();
